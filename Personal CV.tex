@@ -7,10 +7,9 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
+\usepackage{proof}
 
 \pagestyle{fancy}
 \fancyhf{} 
@@ -18,16 +17,16 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-%---------------------------------------------------
+%-------------------------------------------
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.35in}
-\addtolength{\evensidemargin}{-0.35in}
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
-%---------------------------------------------------
+%-------------------------------------------
 
 \urlstyle{same}
 
@@ -35,14 +34,14 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-%---------------------------------------------------
+%-------------------------------------------
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}
+}{}{0em}{}[\color{red}\titlerule \vspace{-5pt}]
 
-%---------------------------------------------------
+%-------------------------------------------
 
 % Custom commands
 \newcommand{\resumeItem}[2]{
@@ -68,22 +67,24 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[label={}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%---------------------------------------------------
-
+%-------------------------------------------
 % CV STARTS HERE 
 
 \begin{document}
 
 %---Heading---
 
-\textbf{\Large Adrian Fok}
+\begin{center}
+    \textbf{\Huge \scshape Adrian Fok} \\ \vspace{1pt}
+    \small +44 7594900714 $|$ \href{mailto:adrnfk19@gmail.com}{\underline {adrnfk19@gmail.com}} $|$ \href{https://linkedin.com/in/...}{\underline{LinkedIN}} 
+\end{center}
 	
 %---EDUCATION---
 
@@ -99,5 +100,10 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
  
-%---
+ %-------------------------------------------
+ 
+%---EXPERIENCE---
+
+ 
+%-------------------------------------------
 \end{document}
