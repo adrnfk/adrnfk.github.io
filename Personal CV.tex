@@ -18,6 +18,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+%---------------------------------------------------
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.35in}
 \addtolength{\evensidemargin}{-0.35in}
@@ -25,6 +27,7 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
+%---------------------------------------------------
 
 \urlstyle{same}
 
@@ -32,11 +35,47 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+%---------------------------------------------------
+
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}
 
+%---------------------------------------------------
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemSmall}[2]{
+
+  \item\small{
+    {\indent #1 (#2)}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%---------------------------------------------------
 
 % CV STARTS HERE 
 
@@ -49,7 +88,16 @@
 %---EDUCATION---
 
 \section{Education}
-
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Royal Grammar School Worcester}{Worcester, UK}
+      {Advanced Levels in Maths, Further Maths, Physics, Chemistry, Computer Science}{Sep 2020 -- Ongoing}
+	  \resumeItemListStart
+        \resumeItemSmall{Member of Royal Air Force Cadets}{Sep 2020 -- Ongoing}
+        \resumeItemSmall{Member of School Orchestra}{Sep 2019 -- Ongoing}
+		\resumeItemSmall{Member of Sixth Form String Ensemble}{Sep 2020 -- Ongoing}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
  
 %---
 \end{document}
